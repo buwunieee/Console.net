@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Console.net</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #b89bff;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    body {
+      border: 4px solid #b89bff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#1c1c1c, #2d2d2d, #1c1c1c);
+      background-size: 100% 300%;
+      animation: scrollBackground 10s linear infinite;
+    }
+
+    @keyframes scrollBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 0% 100%;
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .container {
+      background-color: transparent;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .rotating-wrapper {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 20px auto;
+      animation: spin 4s linear infinite;
+    }
+
+    .rotating-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .rotating-wrapper span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #b89bff;
+      font-size: 14px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .footer-text {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    .download-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: 2px solid #b89bff;
+      border-radius: 8px;
+      background-color: transparent;
+      color: #b89bff;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background-color: #b89bff22;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rotating-wrapper">
+      <img src="Slakk_resized.png" alt="Logo">
+      <span>@buwunieee</span>
+    </div>
+    <div class="title">Console.net</div>
+    <div class="footer-text">Console.net(NETFRAMEWORK.DEV)</div>
+    <a class="download-btn" href="ConsoleNet.rar" download>Download</a>
+  </div>
+</body>
+</html>
